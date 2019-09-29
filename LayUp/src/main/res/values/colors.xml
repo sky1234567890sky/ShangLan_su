@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="c_fff">#fff</color>
+    <color name="c_e34536">#E34536</color>
+    <color name="c_20000000">#20000000</color>
+    <color name="c_8a8a8a">#8a8a8a</color>
+    <color name="c_e7e7e7">#e7e7e7</color>
+    <color name="c_222">#000</color>
+    <color name="c_208a8a8a">#108a8a8a</color>
+    <color name="c_20e34536">#70e34739</color>
+    <color name="c_5c90ca">#538ED0</color>
+    <color name="c_4782c4">#4782c4</color>
+    <color name="c_f2f2f2">#f2f2f2</color>
+    <color name="c_f7f7f7">#f7f7f7</color>
+    <color name="c_EBEDF0">#EBEDF0</color>
+    <color name="c_10222">#10222222</color>
+    <color name="c_FEF3ED">#FEF3ED</color>
+    <color name="c_000">#000</color>
+    <color name="color_material_light">#ECECEC</color>
+    <color name="c_gray">#9E9E9E</color>
+    <color name="c_red">#ff0000</color>
+    <color name="c_eee">#eee</color>
+    <color name="grey_second">#a4a4a4</color>
+    <color name="grey_first">#222222</color>
+    <color name="grey_loading">#e7e7e7</color>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/c_fff">
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_margin="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                tools:ignore="VectorDrawableCompat"
+                android:layout_marginEnd="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toRightOf="@id/header"
+                android:textColor="@color/c_e34536"
+                android:layout_toEndOf="@id/header" />
+
+            <TextView
+                android:id="@+id/attention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/tv_guanzhu_bg"
+                android:paddingBottom="@dimen/dp_4"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_4"
+                android:text="@string/addguanzhu"
+                android:textColor="@color/c_e34536"
+                android:textSize="@dimen/sp_12"
+                tools:ignore="RelativeOverlap"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/header"
+                android:layout_toRightOf="@id/header"
+                android:textColor="@color/c_8a8a8a"
+                android:textSize="@dimen/sp_10"
+                android:layout_toEndOf="@id/header" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/header"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="@color/c_222" />
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+                android:id="@+id/jiecao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jiecao"
+            android:orientation="vertical">
+            <include layout="@layout/line"/>
+            <include layout="@layout/circle_recommendandvideo_bottom"/>
+
+            <include layout="@layout/line" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

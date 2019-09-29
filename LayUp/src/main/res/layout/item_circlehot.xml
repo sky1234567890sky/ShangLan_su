@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_4">
+
+    <com.sport.sportproject.utils.RoundImageView
+        android:id="@+id/tv_bg_url"
+        android:layout_width="@dimen/dp_130"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/dp_90"  />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_bg_url"
+        android:textColor="@color/c_fff"
+        android:layout_alignTop="@id/tv_bg_url"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_6"
+        android:text="@string/search" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_bg_url"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:textColor="@color/c_fff"
+        android:layout_marginLeft="@dimen/dp_10" />
+</RelativeLayout>

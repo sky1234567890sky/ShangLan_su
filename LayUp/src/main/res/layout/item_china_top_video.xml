@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/topvideo_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c_222"
+        android:textSize="@dimen/sp_15" />
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayer
+        android:id="@+id/topvideo_jcvideo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_below="@id/topvideo_tv_title"
+        android:layout_marginTop="@dimen/dp_6" />
+
+    <TextView
+        android:id="@+id/topvideo_tv_video_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/topvideo_jcvideo"
+        android:layout_alignRight="@id/topvideo_jcvideo"
+        android:background="@color/c_20000000"
+        android:paddingLeft="@dimen/dp_3"
+        android:paddingRight="@dimen/dp_3"
+        android:paddingTop="@dimen/dp_1"
+        android:paddingBottom="@dimen/dp_1"
+        android:textColor="@color/c_fff"
+        android:textSize="@dimen/sp_11" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topvideo_jcvideo"
+        android:layout_marginTop="@dimen/dp_6"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/topvideo_tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_6"
+            android:background="@drawable/img_corun_bg"
+            android:paddingBottom="@dimen/dp_1"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_1"
+            android:textColor="@color/c_4782c4"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/topvideo_jcvideo_tv_comments_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c_8a8a8a"
+            android:textSize="@dimen/sp_10" />
+
+    </LinearLayout>
+
+</RelativeLayout>

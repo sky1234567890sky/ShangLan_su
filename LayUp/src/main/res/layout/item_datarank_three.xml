@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:padding="@dimen/dp_2">
+
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_weight="4.4"
+            android:textAppearance="@style/text_rank_style" />
+
+        <TextView
+            android:id="@+id/item_tv_victory_or_defeat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:textAppearance="@style/text_rank_style"
+            android:textColor="@color/c_222"
+            android:textSize="@dimen/sp_12" />
+        <TextView
+            android:id="@+id/item_tv_win_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:textAppearance="@style/text_rank_style" />
+        <TextView
+            android:id="@+id/item_tv_Margin_points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:textAppearance="@style/text_rank_style" />
+        <TextView
+            android:id="@+id/item_tv_integral"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:textAppearance="@style/text_rank_style" />
+<!--textAppearance布局里面设置文字的外观-->
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/item_rlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll" />
+</RelativeLayout>

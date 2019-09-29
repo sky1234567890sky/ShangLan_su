@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/photos_array_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c_222"
+        android:textSize="@dimen/sp_15" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_below="@id/photos_array_tv_title"
+        android:layout_marginTop="@dimen/dp_6">
+
+        <com.sport.sportproject.utils.RoundImageView
+            android:id="@+id/iv_pics1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <com.sport.sportproject.utils.RoundImageView
+            android:id="@+id/iv_pics2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <com.sport.sportproject.utils.RoundImageView
+            android:id="@+id/iv_pics3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/photos_array_tv_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_marginTop="@dimen/dp_4"
+        android:textColor="@color/c_8a8a8a"
+        android:textSize="@dimen/sp_10" />
+
+</RelativeLayout>

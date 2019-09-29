@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_10">
+
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_80"
+
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/iv_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_video_list_play" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_toLeftOf="@id/rl_img"
+        android:textColor="@color/c_222"
+        android:textSize="@dimen/sp_15"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_toStartOf="@id/rl_img" />
+
+    <TextView
+        android:id="@+id/tv_comments_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rl_img"
+        android:textColor="@color/c_8a8a8a"
+        android:textSize="@dimen/sp_10" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LoginDemo</string>
+    <string name="title">登陆第1通航咨询</string>
+    <string name="phone">+86 |  输入手机号</string>
+    <string name="verification_code">请输入验证码</string>
+    <string name="code">|   获取验证码</string>
+    <string name="hint">未注册手机验证后自动登录</string>
+    <string name="login">登录</string>
+    <string name="consent">我阅读并同意\"用户协议\"和\"隐私条例\"</string>
+    <string name="text_3f">第三方账号快速登录</string>
+</resources>

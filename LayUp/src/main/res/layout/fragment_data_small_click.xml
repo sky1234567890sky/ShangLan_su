@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:padding="@dimen/dp_4"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_header1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:layout_weight="4.5"
+                        android:textAppearance="@style/text_rank_style" />
+                    <TextView
+                        android:id="@+id/tv_header2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:textAppearance="@style/text_rank_style" />
+                    <TextView
+                        android:id="@+id/tv_header3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:textAppearance="@style/text_rank_style" />
+                    <TextView
+                        android:id="@+id/tv_header4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="center"
+                        android:textAppearance="@style/text_rank_style" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_schedule"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="@dimen/dp_26"
+                    android:background="@color/c_f7f7f7"
+                      >
+
+                    <TextView
+                        android:id="@+id/tv_prev"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_6"
+                        android:paddingBottom="@dimen/dp_2"
+                        android:paddingTop="@dimen/dp_2"
+                        android:layout_weight="1.5"
+                        android:drawableLeft="@drawable/icon_standings_left"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:visibility="invisible"
+                        android:textAppearance="@style/text_rank_style" />
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="7">
+                        <TextView
+                            android:id="@+id/tv_round_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:drawablePadding="@dimen/dp_4"
+                            android:paddingBottom="@dimen/dp_2"
+                            android:paddingTop="@dimen/dp_2"
+                            android:drawableRight="@drawable/icon_standings_down"
+                            android:gravity="center"
+                            android:textAppearance="@style/text_rank_style" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_next"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_8"
+                        android:layout_weight="1.5"
+                        android:drawablePadding="@dimen/dp_4"
+                        android:paddingBottom="@dimen/dp_2"
+                        android:paddingTop="@dimen/dp_2"
+                        android:visibility="invisible"
+                        android:drawableRight="@drawable/icon_standings_right"
+                        android:textAppearance="@style/text_rank_style" />
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/line"
+                    layout="@layout/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_1" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rlv_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"/>
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:textSize="@dimen/sp_9"
+                    android:padding="@dimen/dp_6"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_vtab_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <q.rorbin.verticaltablayout.VerticalTabLayout
+            android:id="@+id/vtab"
+            android:layout_width="@dimen/dp_90"
+            android:layout_height="match_parent"
+            android:background="@color/c_fff"
+            app:indicator_color="@color/c_e34536"
+            app:indicator_corners="@dimen/dp_2"
+            app:tab_margin="@dimen/dp_8"
+            app:tab_mode="scrollable" />
+
+        <View
+            android:layout_width="@dimen/dp_0_1"
+            android:layout_height="match_parent"
+            android:background="@color/c_8a8a8a" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

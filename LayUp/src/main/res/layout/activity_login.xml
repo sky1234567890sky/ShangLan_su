@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:fitsSystemWindows="true"
+    tools:context="com.sport.sportproject.ui.activity_login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_4"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/def_btn_back"
+        tools:ignore="ContentDescription"
+        android:layout_marginStart="@dimen/dp_4" />
+
+    <TextView
+        android:id="@+id/get_wenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_4"
+        android:layout_marginTop="@dimen/dp_4"
+        android:padding="@dimen/dp_10"
+        android:layout_alignParentRight="true"
+        android:text="遇到问题？"
+        />
+    <org.raphets.roundimageview.RoundImageView
+        android:id="@+id/iv_denglu_jiemian_logo"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_70"
+        android:src="@drawable/icon_reward_default_head"
+        tools:ignore="ContentDescription" />
+    <LinearLayout
+        android:id="@+id/ll_type_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_denglu_jiemian_logo"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/dp_24"
+            android:text="@string/add86"
+            android:textColor="@color/c_222"
+            android:paddingEnd="@dimen/dp_24"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+            android:id="@+id/et_input_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c_00000000"
+            android:hint="@string/phone_num"
+            android:inputType="phone|number"
+            android:lines="1"
+            android:maxLength="11"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingTop="@dimen/dp_3"
+            android:textCursorDrawable="@drawable/textcursor" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@id/ll_type_phone"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/c_e7e7e7" />
+
+    <LinearLayout
+        android:id="@+id/ll_type_verfiy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_input_verfiy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@color/c_00000000"
+            android:hint="@string/verfiy"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="6"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingTop="@dimen/dp_3"
+            android:textCursorDrawable="@drawable/textcursor" />
+
+        <TextView
+            android:id="@+id/tv_getverfiy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:text="@string/getverfiy"
+            android:textColor="@color/c_e34536"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@id/ll_type_verfiy"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/c_e7e7e7" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/login_main_login_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:text="@string/login"
+        android:textColor="@color/c_fff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/c_e7e7e7"
+        ></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <TextView
+        android:id="@+id/tv_three_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="@string/num_three_user_login"
+        android:textSize="@dimen/sp_11" />
+
+        <ImageView
+            android:id="@+id/iv_wechat_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_share_weixin_button"
+            android:layout_below="@id/tv_three_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            />
+        <ImageView
+            android:id="@+id/iv_qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_share_qq_button"
+            android:layout_gravity="center"
+            android:layout_below="@id/tv_three_login"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_90"
+            />
+        <ImageView
+            android:id="@+id/iv_sank_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_share_weibo_button"
+            android:layout_gravity="center"
+            android:layout_below="@id/tv_three_login"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_90"
+            />
+
+
+</RelativeLayout>

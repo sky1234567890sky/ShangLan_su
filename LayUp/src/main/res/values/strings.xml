@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">SportProject</string>
+    <string name="jidiao">尽跳</string>
+    <string name="dajiadouzaisou">大家都在搜 :</string>
+    <string name="A_pure_and_loving_world_of_basketball">一个纯粹而有爱的篮球世界</string>
+    <string name="upbasketball">上篮</string>
+    <string name="lijilogin">立即登录</string>
+    <string name="feedback">反馈</string>
+    <string name="search">搜索</string>
+    <string name="setting">设置</string>
+    <string name="I_notice">我的通知</string>
+    <string name="Collection_and_history">收藏 / 历史</string>
+    <string name="system_message">系统消息</string>
+    <string name="match">比赛</string>
+    <string name="mainpage">首页</string>
+    <string name="circlezi">圈子</string>
+    <string name="data">数据</string>
+    <string name="affirm">确认</string>
+    <string name="add86"><![CDATA[+86 >]]></string>
+    <string name="phone_num">手机号</string>
+    <string name="getverfiy">获取验证码</string>
+    <string name="verfiy">验证码</string>
+    <string name="login">登录</string>
+    <string name="num_three_user_login">第三方账户登录</string>
+    <string name="hot">热门</string>
+    <string name="nba">NBA</string>
+    <string name="cba">CBA</string>
+    <string name="select_you_like_team">选择你关注的球队</string>
+    <string name="fav_team">关注球队</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="receive_push_messages">接收推送消息</string>
+    <string name="what_messages_to_receive_after_logging_in">登录后接收哪些消息的提醒</string>
+    <string name="inme">\@我的</string>
+    <string name="Reply_me_Ed">回复我的</string>
+    <string name="night_No_disturbing">夜间免打扰</string>
+    <string name="no_disturbing_mode_23">免打扰模式下,23:00 - 次日7:00都不再接收@和回复提醒</string>
+    <string name="rests">其他</string>
+    <string name="null_photos">无图模式(2G/3G/4G)</string>
+    <string name="text_size_select">字号选择</string>
+    <string name="clear_cache">清理缓存</string>
+    <string name="network_check">网络诊断</string>
+    <string name="Recommend_your_friends">推荐给好友</string>
+    <string name="Give_us_a_grade">给我们评分吧</string>
+    <string name="versionscode">版本</string>
+    <string name="top">置顶</string>
+    <string name="shendu">深度</string>
+    <string name="write_comments"> 写评论</string>
+    <string name="loadiing">正在加载中...</string>
+    <string name="null_more">已无更多数据</string>
+    <string name="focus">关注</string>
+    <string name="guanzhu">+关注</string>
+    <string name="share">分享</string>
+    <string name="comments">评论</string>
+    <string name="like">赞</string>
+    <string name="sections">专栏</string>
+    <string name="addguanzhu">+关注</string>
+    <string name="jintiaoisloading">上篮正在努力加载...</string>
+    <string name="right_bracket">(</string>
+    <string name="left_bracket">)</string>
+    <string name="nulls"> </string>
+    <string name="right_center_bracket">[</string>
+    <string name="left_center_bracket">]</string>
+    <string name="vs">VS</string>
+    <string name="maohao">:</string>
+    <string name="versions">版本:</string>
+    <string name="shanglan">大灌篮</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify_second">秒后重新发送</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="loading">加载中......</string>
+</resources>

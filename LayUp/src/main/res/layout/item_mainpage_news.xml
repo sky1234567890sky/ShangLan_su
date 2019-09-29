@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10">
+    <org.raphets.roundimageview.RoundImageView
+        android:id="@+id/item_thumb"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_75"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dp_2"
+        android:layout_toLeftOf="@id/item_thumb"
+        android:textColor="@color/c_222"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_thumb"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_6"
+            android:background="@drawable/img_corun_bg"
+            android:paddingBottom="@dimen/dp_1"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_1"
+            android:textColor="@color/c_4782c4"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_add_to_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_6"
+            android:background="@drawable/img_corun_bg"
+            android:paddingBottom="@dimen/dp_1"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_1"
+            android:text="@string/top"
+            android:textColor="@color/c_5c90ca"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c_8a8a8a"
+            android:textSize="@dimen/sp_10" />
+    </LinearLayout>
+</RelativeLayout>

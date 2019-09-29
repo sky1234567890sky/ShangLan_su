@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_fff"
+    tools:context="com.sport.sportproject.ui.activity_attention_team.Main3Activity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/smarttab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/c_e34536"
+        android:overScrollMode="never"
+        app:stl_defaultTabTextColor="@color/c_fff"
+        app:stl_defaultTabTextSize="@dimen/sp_12"
+        app:stl_distributeEvenly="true"
+        app:stl_dividerColor="@color/c_00000000"
+        app:stl_drawDecorationAfterTab="true"
+        app:stl_indicatorColor="@color/c_fff"
+        app:stl_indicatorCornerRadius="@dimen/dp_2"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="@dimen/dp_3"
+        app:stl_indicatorWidth="auto"
+        app:stl_indicatorWithoutPadding="true"
+        app:stl_overlineColor="@color/c_00000000"
+        app:stl_titleOffset="auto_center" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:overScrollMode="never" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/c_e7e7e7"
+        android:padding="@dimen/dp_6">
+
+        <TextView
+            android:id="@+id/tv_affirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:clickable="false"
+            android:background="@drawable/guanzhu_btn_unselect_bg"
+            android:gravity="center_horizontal|center"
+            android:text="@string/affirm"
+            android:textColor="@color/c_fff" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/smartTab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/c_fff"
+        app:stl_defaultTabTextColor="@color/c_222"
+        app:stl_defaultTabTextSize="@dimen/sp_12"
+        app:stl_drawDecorationAfterTab="true"
+        app:stl_dividerColor="@color/c_00000000"
+        app:stl_indicatorColor="@color/c_e34536"
+        android:overScrollMode="never"
+        app:stl_distributeEvenly="true"
+        app:stl_indicatorWithoutPadding="true"
+        app:stl_overlineColor="@color/c_00000000"
+        app:stl_indicatorCornerRadius="@dimen/dp_2"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_underlineColor="@color/c_00000000"
+        app:stl_indicatorThickness="@dimen/dp_3"
+        app:stl_indicatorWidth="auto"
+        app:stl_titleOffset="auto_center" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent"
+        android:layout_below="@id/smartTab" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LayUp/LayUp.iml" filepath="$PROJECT_DIR$/LayUp/LayUp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShangLan_su.iml" filepath="$PROJECT_DIR$/ShangLan_su.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alipay/alipay.iml" filepath="$PROJECT_DIR$/alipay/alipay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basepop/basepop.iml" filepath="$PROJECT_DIR$/basepop/basepop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chat/chat.iml" filepath="$PROJECT_DIR$/chat/chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logindemo/logindemo.iml" filepath="$PROJECT_DIR$/logindemo/logindemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/takephoto/takephoto.iml" filepath="$PROJECT_DIR$/takephoto/takephoto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tuikit/tuikit.iml" filepath="$PROJECT_DIR$/tuikit/tuikit.iml" />
+    </modules>
+  </component>
+</project>

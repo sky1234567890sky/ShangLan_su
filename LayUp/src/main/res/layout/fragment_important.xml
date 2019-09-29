@@ -1,0 +1,148 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sport.sportproject.ui.fragment_match.fragement.ImportantFragment">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rotato_bg"
+        android:layout_centerInParent="true"
+        android:id="@+id/guanzhu_rotato"
+        android:visibility="gone"
+        />
+    <!--刷新脚-->
+    <RelativeLayout
+    android:id="@+id/foot_style"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_e7e7e7"
+    android:paddingBottom="@dimen/dp_8"
+    android:paddingTop="@dimen/dp_8"
+        android:visibility="gone"
+        >
+    <include
+    layout="@layout/loadding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/match_smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--刷新头-->
+        <com.scwang.smartrefresh.header.MaterialHeader
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:id="@+id/headler_style"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/stickyheader_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <!--&lt;!&ndash; Header布局 &ndash;&gt;-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/sticky_header"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/color_material_light"-->
+            <!--android:orientation="vertical">-->
+            <!--<TextView-->
+                <!--android:id="@+id/header_textview"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:paddingLeft="15dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:textSize="14sp"-->
+                <!--tools:text="2017年09月27日"/>-->
+        <!--</LinearLayout>-->
+    </RelativeLayout>
+            <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+                <!--android:id="@+id/match_smart"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--刷新头-->
+                <!--<com.scwang.smartrefresh.header.MaterialHeader-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+
+
+                <!--<android.support.v4.widget.NestedScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+            <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+        <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/match_rl_backgroud"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:visibility="gone">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/match_iv_red_bg"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_147_5"-->
+    <!--android:src="@drawable/red_bg" />-->
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_170"-->
+    <!--android:layout_marginLeft="@dimen/dp_6"-->
+    <!--android:layout_marginRight="@dimen/dp_6"-->
+    <!--android:layout_marginTop="@dimen/dp_5"-->
+    <!--android:background="@color/c_00000000"-->
+    <!--app:cardCornerRadius="@dimen/dp_6"-->
+    <!--app:cardElevation="@dimen/dp_4"-->
+    <!--app:cardUseCompatPadding="true">-->
+    <!--<com.youth.banner.Banner-->
+    <!--android:id="@+id/mbanner"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--</android.support.v7.widget.CardView>-->
+    <!--</RelativeLayout>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/cctv_rlv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_88"-->
+    <!--android:nestedScrollingEnabled="false"-->
+    <!--android:visibility="gone"-->
+    <!--tools:ignore="UnusedAttribute" />-->
+    <!--<View-->
+    <!--android:id="@+id/view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp_6"-->
+    <!--android:background="@color/c_EBEDF0"-->
+    <!--android:visibility="gone" />-->
+    <!--</LinearLayout>-->
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+    <!--刷新脚-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/c_e7e7e7"-->
+    <!--android:paddingBottom="@dimen/dp_8"-->
+    <!--android:paddingTop="@dimen/dp_8">-->
+    <!--<include-->
+    <!--layout="@layout/loadding"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true" />-->
+    <!--</RelativeLayout>-->
+</RelativeLayout>

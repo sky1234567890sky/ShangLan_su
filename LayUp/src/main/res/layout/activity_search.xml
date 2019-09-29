@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_fff"
+    android:orientation="vertical"
+    tools:context="com.sport.sportproject.ui.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_e34536">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/def_btn_while">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_input_search_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8"
+                    android:background="@drawable/bg_player_rate"
+                    android:drawableLeft="@drawable/cehuajiemian_xiafang_sousuo"
+                    android:drawableStart="@drawable/cehuajiemian_xiafang_sousuo"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_2"
+                    android:textCursorDrawable="@drawable/textcursor" />
+
+                <TextView
+                    android:id="@+id/tv_start_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:paddingTop="@dimen/dp_2"
+                    android:text="@string/search"
+                    android:textColor="@color/c_fff"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_e7e7e7"
+    android:orientation="vertical"
+    tools:context="com.sport.sportproject.ui.main_navigation.SettingActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbarSize="@dimen/dp_0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/dp_8"-->
+                <!--android:background="@color/c_fff">-->
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/seeting_headler_img"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="账号管理"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/c_222"&ndash;&gt;-->
+                    <!--&lt;!&ndash;tools:ignore="HardcodedText,RelativeOverlap,RtlHardcoded"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginLeft="@dimen/dp_20"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                <!--&lt;!&ndash;<org.raphets.roundimageview.RoundImageView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_margin="@dimen/dp_10"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="@dimen/dp_40"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="@dimen/dp_40"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/headler_img"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:src="@mipmap/ic_launcher"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_centerInParent="true"&ndash;&gt;-->
+                    <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/c_fff"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/receive_push_messages"
+                    android:textColor="@color/c_222"
+                    tools:ignore="RelativeOverlap" />
+
+                <CheckBox
+                    android:id="@+id/cb_receive_push_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/red_unselect_frame"
+                    android:layout_centerVertical="true"  />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_login_after"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dp_6"
+                    android:paddingLeft="@dimen/sp_10"
+                    android:paddingTop="@dimen/dp_6"
+                    android:text="@string/what_messages_to_receive_after_logging_in"
+                    android:textSize="@dimen/sp_10"
+                    android:paddingStart="@dimen/sp_10"
+                    tools:ignore="RtlSymmetry" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c_fff"
+                    android:padding="@dimen/dp_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/inme"
+                        android:textColor="@color/c_222"
+                        tools:ignore="RelativeOverlap" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/red_notclick" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_1"
+                    android:background="@color/c_8a8a8a" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c_fff"
+                    android:padding="@dimen/dp_15">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/Reply_me_Ed"
+                        android:textColor="@color/c_222"
+                        tools:ignore="RelativeOverlap" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@drawable/red_notclick" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_1"
+                    android:background="@color/c_8a8a8a" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/c_fff"
+                    android:padding="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="RelativeOverlap">
+
+                        <TextView
+                            android:id="@+id/tv_night_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/night_No_disturbing"
+                            android:textColor="@color/c_222" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="@dimen/dp_4"
+                            android:text="@string/no_disturbing_mode_23"
+                            android:textSize="@dimen/sp_8" />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_4"
+                        android:button="@drawable/red_notclick" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp_6"
+                android:paddingLeft="@dimen/sp_10"
+                android:paddingTop="@dimen/dp_6"
+                android:text="@string/rests"
+                android:textSize="@dimen/sp_10"
+                android:paddingStart="@dimen/sp_10"
+                tools:ignore="RtlSymmetry" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_fff"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/null_photos"
+                    android:textColor="@color/c_222"
+                    tools:ignore="RelativeOverlap" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/setting_select_bg" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_1"
+                android:background="@color/c_8a8a8a" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_fff"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/text_size_select"
+                    android:textColor="@color/c_222" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_1"
+                android:background="@color/c_8a8a8a" />
+
+            <RelativeLayout
+                android:id="@+id/rl_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_fff"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/clear_cache"
+                    android:textColor="@color/c_222" />
+                <TextView
+                    android:id="@+id/tv_cache_size"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/c_222"
+                    android:textSize="@dimen/sp_10"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_fff"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/network_check"
+                    android:textColor="@color/c_222" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:background="@color/c_fff"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Recommend_your_friends"
+                    android:textColor="@color/c_222"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:src="@drawable/img_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dp_4" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_1"
+                android:background="@color/c_8a8a8a" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_fff"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Give_us_a_grade"
+                    android:textColor="@color/c_222"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_4"
+                    android:src="@drawable/img_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dp_4" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_1"
+                android:background="@color/c_8a8a8a" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_fff"
+                android:padding="@dimen/dp_15">
+
+                <TextView
+                    android:id="@+id/tv_versions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/versionscode"
+                    android:textColor="@color/c_222"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_3"
+                    android:src="@drawable/news"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/dp_3" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_1"
+                android:background="@color/c_8a8a8a" />
+
+            <RelativeLayout
+                android:id="@+id/back_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/c_fff"
+                android:padding="@dimen/dp_15">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="退出登录"
+                    android:textColor="@color/c_e34536"
+                    tools:ignore="RelativeOverlap"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

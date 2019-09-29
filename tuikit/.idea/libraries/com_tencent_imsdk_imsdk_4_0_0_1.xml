@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.tencent.imsdk:imsdk-4.0.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imsdk-4.0.0.1.aar/12c1d140fe2d84284ffb3334cbb0e4e4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/imsdk-4.0.0.1.aar/12c1d140fe2d84284ffb3334cbb0e4e4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tencent.imsdk/imsdk/4.0.0.1/e0b811467bf37024a768f10d366e5760d95f9137/imsdk-4.0.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

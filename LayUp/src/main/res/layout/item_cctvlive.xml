@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_8"
+    app:cardBackgroundColor="@color/c_fff"
+    app:cardCornerRadius="@dimen/dp_2"
+    app:cardElevation="@dimen/dp_2"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_8">
+        <TextView
+            android:id="@+id/tv_nbajihou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/c_8a8a8a"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" - "
+            android:textColor="@color/c_222"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/left_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="114"
+            android:textColor="@color/c_000"
+            android:textSize="@dimen/sp_18"
+            android:layout_toLeftOf="@id/tv_day"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            />
+
+        <TextView
+            android:id="@+id/right_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="110"
+            android:textColor="@color/c_8a8a8a"
+            android:textSize="@dimen/sp_18"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@id/tv_day"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+        <com.sport.sportproject.utils.RoundImageView
+            android:id="@+id/img_1"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_below="@id/tv_nbajihou"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_6"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_1"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_marginStart="@dimen/dp_22"
+            android:layout_marginTop="@dimen/dp_4"
+            android:textSize="@dimen/sp_8" />
+
+        <com.sport.sportproject.utils.RoundImageView
+            android:id="@+id/img2"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/tv_nbajihou"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_6"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/img2"
+            android:layout_marginEnd="@dimen/dp_22"
+            android:layout_marginRight="@dimen/dp_22"
+            android:layout_marginTop="@dimen/dp_4"
+            android:textSize="@dimen/sp_8" />
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_day"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@drawable/bg_btn_red"
+            android:paddingBottom="@dimen/dp_1"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_1"
+            android:textColor="@color/c_e34536"
+            android:text="比赛集锦"
+            android:textSize="@dimen/sp_10"
+            android:layout_marginBottom="@dimen/sp_10"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

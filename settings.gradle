@@ -1,0 +1,1 @@
+include 'LayUp', ':logindemo', ':basepop', ':tuikit', ':takephoto', ':chat', ':alipay'

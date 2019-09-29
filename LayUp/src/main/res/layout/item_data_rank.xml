@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_4"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tv_start_play"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginStart="@dimen/dp_6"
+            android:layout_weight="4"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingTop="@dimen/dp_2"
+            android:textColor="@color/c_8a8a8a"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingTop="@dimen/dp_2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights,RtlHardcoded,UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/tv_team_a_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textAppearance="@style/text_rank_style" />
+
+                <ImageView
+                    android:id="@+id/tv_team_a_logo"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_6" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_fsa_fsb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textAppearance="@style/text_rank_style" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/iv_team_b_logo"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginEnd="@dimen/dp_6"
+                    android:layout_marginRight="@dimen/dp_6" />
+
+                <TextView
+                    android:id="@+id/tv_team_b_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLength="4"
+                    android:textAppearance="@style/text_rank_style" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

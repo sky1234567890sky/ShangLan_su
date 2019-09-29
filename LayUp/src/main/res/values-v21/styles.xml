@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="windowNoTitle">true</item>-->
+        <item name="android:windowBackground">@color/c_00000000</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="android:colorPrimary">@color/c_e34536</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

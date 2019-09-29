@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/web_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sport.sportproject.ui.WebViewActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c_e34536"
+        app:navigationIcon="@drawable/back">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_bastball"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_num_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@drawable/tv_comments_bg"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_2"
+            android:textColor="@color/c_fff"
+            tools:ignore="RtlHardcoded" />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbarSize="@dimen/dp_0" />
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_fff"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_2">
+
+        <EditText
+            android:id="@+id/et_write_comments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dp_6"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_weight="6.5"
+            android:background="@drawable/bg_pingjia_title_img"
+            android:hint="@string/write_comments"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_3"
+            android:textCursorDrawable="@drawable/textcursor"
+            tools:ignore="NestedWeights,RtlSymmetry" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:src="@drawable/img_comments"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_comments_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/iv_comments"
+                android:layout_alignRight="@id/iv_comments"
+                android:layout_alignTop="@id/iv_comments"
+                android:layout_marginEnd="@dimen/dp_4"
+                android:layout_marginRight="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_4"
+                android:background="@color/c_fff"
+                android:paddingLeft="@dimen/dp_2"
+                android:paddingRight="@dimen/dp_2"
+                android:text="@string/versionscode"
+                android:textColor="@color/c_e34536"
+                android:textSize="@dimen/sp_7" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="2.5dp"
+            android:src="@drawable/img_weixiao"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="2.5dp"
+            android:src="@drawable/img_share"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
